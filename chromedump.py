@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-chromedump.py  Chrome credential dumper via SMB + DPAPI domain backup key (PVK)
+ChromeDump  Chrome credential dumper via SMB + DPAPI domain backup key (PVK)
 
 Usage:
   python3 chromedump.py -t 172.16.2.102 -d DEV -u joe \

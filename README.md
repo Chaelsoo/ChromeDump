@@ -1,4 +1,4 @@
-# chromedump
+# ChromeDump
 
 A Python tool that extracts and decrypts saved credentials from Chromium-based browsers on remote Windows machines, over SMB, using the Windows DPAPI domain backup key (PVK). No shellcode, no agent, no interactive session on the target required.
 
